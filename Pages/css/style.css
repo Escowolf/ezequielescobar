@@ -22,6 +22,7 @@ section {
     min-height: 200px;
 }
 
-.main-section > projects {
+#projects {
+    color:black;
     background-color: antiquewhite!important;
 }
