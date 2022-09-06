@@ -1,0 +1,67 @@
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+body{
+    background-color: rgb(215, 215, 215);
+    color:rgb(93, 93, 93);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
+}
+
+h1, h2 {
+    margin:0px;
+}
+h2 {
+    font-size:2rem;
+}
+
+section {
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.nav{
+    min-height: 25px;
+    text-align: end;
+    display: static;
+}
+
+.nav > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color:aliceblue;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.nav > a:hover {
+    text-decoration: none;
+    color:rgb(57, 57, 57);
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav > button{
+    border-style: none;
+    background-color: Transparent;
+}
+
+.nav > button > img{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+#introduction{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+#projects {
+    color:black;
+    background-color: antiquewhite!important;
+}
