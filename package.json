@@ -1,0 +1,23 @@
+{
+  "name": "escmeanything",
+  "version": "1.0.0",
+  "description": "Personal project (portfolio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Escowolf/escmeanything.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web"
+  ],
+  "author": "Ezequiel Sousa",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://github.com/Escowolf/escmeanything/issues"
+  },
+  "homepage": "https://github.com/Escowolf/escmeanything#readme"
+}
