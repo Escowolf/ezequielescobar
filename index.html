@@ -5,23 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script type="text/javascript" src="./js/darkmode.js"></script>
+    <script type="text/javascript" src="./js/scriptStyle.js"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <title> Hire me - FullStack Jr</title>
-    <script>
-        alert("construction!");
-    </script>
 </head>
 
-<body>
-    <header class="nav">
+<body class="light">
+    <header class="header">
         <button id="backToTop" onclick="backToTop()"><strong>Top</strong></button>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#dreams" class="nav-link">Dreams</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <button onclick="darkModeFunction()"><img id="dark-mode" class="icon" src="./images/dayNight.svg"
-                alt="Toggle dark mode" value="1"></button>
+        <img id="logo" src="./images/logo.png" alt="logo Escmeanything" />
+        <nav id="nav-bar" class="light-nav">
+            <a href="#" class="nav-link">Me</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#dreams" class="nav-link">Dreams</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <button id="btTrans" onclick="darkModeFunction()"><img id="dark-mode" class="icon"
+                    src="./images/dayNight.svg" alt="Toggle dark mode" value="1"></button>
+        </nav>
     </header>
     <content>
         <section id="introduction">
@@ -33,15 +34,47 @@
         </section>
         <section class="main-section" id="projects">
             <header class="title">Projects</header>
-            <ul>
-                <li class="text">Umusic</li>
-                <li class="text">Rota Ativa</li>
-                <li class="text">Biblioteca DevEnd</li>
-            </ul>
-            <code>button</code>
+            <div class="projectsPro">
+                <div class="projectsPro-item">
+                    <div class="projectsPro-item-imagem">
+                        <img src="./images/umusic.png">
+                    </div>
+                    <div class="projectsPro-item_info">
+                        <h4>Umusic</h4>
+                        <description>Aplicação web que simula o funcionamento do Spotify. Funcionalidades: realiza cadastro de usuários, toca músicas, exibe playlists de forma dinâmica.
+                            Utilizado: CSS, HTML, JavaScript, React e Boostrap;
+                        </description>
+                        <a href="https://codesandbox.io/s/pedantic-galileo-ioegu7">Acesse</a>
+                    </div>
+                </div>
+                <div class="projectsPro-item">
+                    <div class="projectsPro-item-imagem">
+                        <img src="./images/RotaAtiva.png">
+                    </div>
+                    <div class="projectsPro-item_info">
+                        <h4>Rota Ativa</h4>
+                        <description>Aplicação web com melhorias aplicáveis na Zona Azul;
+                            Frameworks utilizados: react e Springboot; Linguagens: javascript e java; Banco: mysql;
+                        </description>
+                        <a href="https://codesandbox.io/p/github/Escowolf/rota-ativa-pads/master">Acesse</a>
+                    </div>
+                </div>
+                <div class="projectsPro-item">
+                    <div class="projectsPro-item-imagem">
+                        <img src="./images/github_page.png">
+                    </div>
+                    <div class="projectsPro-item_info">
+                        <h4>GitHub Page</h4>
+                        <p>
+                            Para conhecer mais sobre meus trabalhos e estudos. :)
+                        </p>
+                        <a href="https://github.com/Escowolf">Acesse</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="main-section" id="dreams">
+        <section class="alternative-section" id="dreams">
             <header class="title">Programming languages</header>
             <ul>
                 <li class="text">Java</li>
@@ -53,8 +86,8 @@
 
         <section class="main-section" id="skills">
             <header class="title">linguagens</header>
-                <li class="text">Java</li>
-                <li class="text">Javascript</li>
+            <li class="text">Java</li>
+            <li class="text">Javascript</li>
             <code>button</code>
         </section>
     </content>
