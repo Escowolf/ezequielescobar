@@ -1,10 +1,13 @@
 .dark-mode {
   background-color: black;
-  color:#e3622f;
+  --Texto:#e3622f;
 }
 
 :root{
-  color:#e3622f;
+  color:var(--Texto);
+  --Texto:#e3622f;
+  --Background:#f5f5f5;
+  --Background-alternativo:#808080;
 }
 
 body {
@@ -18,10 +21,6 @@ body {
   margin: 0px;
 }
 
-.text>li {
-  font-size: 2rem;
-}
-
 section {
   min-width: 200px;
   min-height: 200px;
@@ -32,7 +31,7 @@ section {
   min-height: 5vh;
   display: static;
   text-align: end;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--Background-alternativo);
   width: 90vw;
   align-items: baseline;
 }
@@ -40,7 +39,7 @@ section {
 .nav-link {
   font-size: 1.4rem;
   text-decoration: none;
-  color: #e3622f;
+  color: var(--Texto);
   margin: 5px;
   padding: 5px;
 }
@@ -92,47 +91,51 @@ button{
 
 .title{
   padding-top: 5vh;
+  padding-bottom:5vh;
   text-align: center;
 }
 
 .main-section {
-  background-color: rgb(255, 199, 127) !important;
-  height: 70vh;
+  background-color: #e3622f;
+  min-height: 70vh;
+  height: 100%;
 }
 
 .alternative-section {
-  background-color: grey !important;
-  height: 70vh;
+  background-color: grey;
+  color: #f5f5f5;
+  min-height: 70vh;
+  height: 100%;
 }
 /*FLEX CONTAINER*/
 .projectsPro{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap: wrap;
-  padding-top:10vh;
 }
 
 .projectsPro-item{
   width: 30%;
   height: 100%;
-  background-color: var(--cinza-clarinho);
-  border-bottom: 1px solid var(--cinza-cimento);
-  margin-bottom: 2rem;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-bottom: 1vh;
+  border: solid 3px  #e3622f;
 }
 
 .projectsPro-item_info{
   padding: 1rem;
+  height: 15vh;
+  background-color: #f5f5f5;
+  color: #e3622f;
+  padding-bottom: 5vh;
 }
 
 .projectsPro-item-imagem{
-  height: 20vh;
+  height: 25vh;
   overflow: hidden;
 }
 
 .projectsPro img{
-  height: 25vh;
+  width: 100%;
 }
 
 .projectsPro-item_info h4{
@@ -153,6 +156,11 @@ button{
   background-color: var(--azul-escuro);
 }
 
+.legend {
+  font-size: 1.4rem;
+  color:red;
+  text-decoration: none;
+}
 
 /*flex END*/
 
@@ -192,6 +200,12 @@ button{
 
   .flex-container {
     flex-direction: column;
+  }
+
+  .projectsPro-item {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
