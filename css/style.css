@@ -1,17 +1,17 @@
 .dark-mode {
   background-color: black;
-  --Texto:#e3622f;
+  --Texto: #e3622f;
 }
 
-:root{
-  color:var(--Texto);
-  --Texto:#e3622f;
-  --Background:#f5f5f5;
-  --Background-alternativo:#808080;
+:root {
+  color: var(--Texto);
+  --Texto: #e3622f;
+  --Background: #f5f5f5;
+  --Background-alternativo: #808080;
 }
 
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #f5f5f5;
   margin: 3%;
 }
@@ -27,7 +27,7 @@ section {
   height: 70vh;
 }
 
-.header{
+.header {
   min-height: 5vh;
   display: static;
   text-align: end;
@@ -46,12 +46,12 @@ section {
 
 .nav-link:hover {
   border-style: none;
-  color:grey;
+  color: grey;
   padding: 5px;
 }
 
-#logo{
-  float:left;
+#logo {
+  float: left;
   height: 10vh;
   object-fit: cover;
 }
@@ -62,7 +62,7 @@ section {
   border: none;
 }
 
-button{
+button {
   border-style: none;
   background-color: Transparent;
   padding: 5px;
@@ -89,14 +89,21 @@ button{
   margin-top: 200px;
 }
 
-.title{
+#profile-ico {
+  border-radius: 50%;
+  float:center;
+  padding-top:10px;
+  padding-bottom:1px"
+}
+
+.title {
   padding-top: 5vh;
-  padding-bottom:5vh;
+  padding-bottom: 5vh;
   text-align: center;
 }
 
 .main-section {
-  color:var(--Background);
+  color: var(--Background);
   background-color: var(--Texto);
   min-height: 70vh;
   height: 100%;
@@ -108,20 +115,20 @@ button{
   height: 100%;
 }
 /*FLEX CONTAINER*/
-.projectsPro{
+.projectsPro {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.projectsPro-item{
+.projectsPro-item {
   width: 30%;
   height: 100%;
   padding-bottom: 1vh;
-  border: solid 3px  var(--Texto);
+  border: solid 3px var(--Texto);
 }
 
-.projectsPro-item_info{
+.projectsPro-item_info {
   padding: 1rem;
   height: 15vh;
   background-color: #f5f5f5;
@@ -129,28 +136,28 @@ button{
   padding-bottom: 5vh;
 }
 
-.projectsPro-item-imagem{
+.projectsPro-item-imagem {
   height: 25vh;
   overflow: hidden;
 }
 
-.projectsPro img{
+.projectsPro img {
   width: 100%;
 }
 
-.projectsPro-item_info h4{
+.projectsPro-item_info h4 {
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
 
-.projectsPro-item_info p{
+.projectsPro-item_info p {
   font-weight: 300;
   margin-bottom: 2rem;
 }
 
-.projectsPro-item_info a{
+.projectsPro-item_info a {
   color: white;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   font-weight: 600;
   background-color: var(--azul-escuro);
@@ -158,25 +165,22 @@ button{
 
 .legend {
   font-size: 1.4rem;
-  color:red;
+  color: red;
   text-decoration: none;
 }
 
 /*flex END*/
 
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
   .header {
     min-height: 50px;
     min-width: 350px;
     margin: top 0px !important;
-    ;
     background-color: inherit;
     text-align: end;
-
   }
 
-  .header>a {
+  .header > a {
     font-size: 2.1rem;
     text-decoration: none;
     color: aliceblue;
@@ -194,7 +198,7 @@ button{
     font-size: 2rem;
   }
 
-  #introduction>code {
+  #introduction > code {
     font-size: 1.5rem;
   }
 
@@ -210,8 +214,8 @@ button{
 }
 
 .heartbeat {
-	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 /* ----------------------------------------------
@@ -226,79 +230,78 @@ button{
  * animation heartbeat
  * ----------------------------------------
  */
- @-webkit-keyframes heartbeat {
+@-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
-
 .text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 /* ----------------------------------------------
