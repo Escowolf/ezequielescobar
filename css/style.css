@@ -75,7 +75,7 @@ button {
   bottom: 5vw;
   right: 5vw;
   color: aliceblue;
-  background-color: brown;
+  background-color: var(--Texto);
 }
 
 #backToTop:hover {
@@ -91,15 +91,16 @@ button {
 
 #profile-ico {
   border-radius: 50%;
-  float:center;
-  padding-top:10px;
-  padding-bottom:1px"
+  padding-top:10vh;
+  padding-bottom:10vh;
+  height: 50vh;
+  align-self: center;
 }
 
 .title {
   padding-top: 5vh;
   padding-bottom: 5vh;
-  text-align: center;
+  width: 50vh;
 }
 
 .main-section {
@@ -107,12 +108,16 @@ button {
   background-color: var(--Texto);
   min-height: 70vh;
   height: 100%;
+  display:flex;
+  align-content: center;
+  padding: 1vw;
 }
 
 .alternative-section {
   color: var(--Texto);
   min-height: 70vh;
   height: 100%;
+  display:flex;
 }
 /*FLEX CONTAINER*/
 .projectsPro {
@@ -130,14 +135,14 @@ button {
 
 .projectsPro-item_info {
   padding: 1rem;
-  height: 15vh;
-  background-color: var(--Background);
-  color: var(--Texto);
+  height:auto;
+  background-color: var(--Texto);
+  color: var(--Background);
   padding-bottom: 5vh;
 }
 
 .projectsPro-item-imagem {
-  height: 25vh;
+  height: 30%;
   overflow: hidden;
 }
 
@@ -167,6 +172,10 @@ button {
   font-size: 1.4rem;
   color: red;
   text-decoration: none;
+}
+.text-read{
+  font-size: 1.8rem;
+  padding: 4vw;
 }
 
 /*flex END*/
