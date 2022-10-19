@@ -8,11 +8,11 @@
   --Texto: #e3622f;
   --Background: #f5f5f5;
   --Background-alternativo: #808080;
+  --Destaque:gray;
 }
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #f5f5f5;
   margin: 3%;
 }
 
@@ -35,6 +35,12 @@ section {
   width: 90vw;
   align-items: baseline;
 }
+#nav-bar{
+  max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
 .nav-link {
   font-size: 1.4rem;
@@ -46,7 +52,7 @@ section {
 
 .nav-link:hover {
   border-style: none;
-  color: grey;
+  color: var(--Destaque);
   padding: 5px;
 }
 
@@ -79,8 +85,9 @@ button {
 }
 
 #backToTop:hover {
-  color: whitesmoke;
-  background-color: rgb(77, 77, 77);
+  color: var(--Background-alternativo);
+  background-color:var(--Background);
+  border: 1px solid var(--Texto);
 }
 
 #introduction {
@@ -181,6 +188,7 @@ button {
 /*flex END*/
 
 @media (max-width: 600px) {
+
   .header {
     min-height: 50px;
     min-width: 350px;
@@ -199,16 +207,51 @@ button {
   }
 
   .title {
-    font-size: 2rem;
-    margin: 0px;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   #introduction {
     font-size: 2rem;
   }
 
-  #introduction > code {
-    font-size: 1.5rem;
+  #profile-ico {
+    border-radius: 50%;
+    padding:0;
+    height: 50vh;
+    margin: auto;
+  }
+
+  .main-section {
+    color: var(--Background);
+    background-color: var(--Texto);
+    min-height: 70vh;
+    align-content: center;
+    padding: 1vw;
+    display: block;
+  }
+  
+  .alternative-section {
+    color: var(--Texto);
+    min-height: 70vh;
+    height: 100%;
+    display: block;
+  }
+  
+  .projectsPro-item_info {
+    padding: 1rem;
+    height:auto;
+    background-color: var(--Background);
+    color: var(--Texto);
+    padding-bottom: 1vh;
+  }
+  
+  .projectsPro-item-imagem {
+    border-radius: 2%;
+    height: 30%;
+    overflow: hidden;
   }
 
   .flex-container {
