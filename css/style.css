@@ -1,11 +1,11 @@
 .dark-mode {
-  background-color: black;
+  background-color: #1A1A1A;
   --Texto: #e3622f;
 }
 
 :root {
   color: var(--Texto);
-  --Texto: #e3622f;
+  --Texto: #B04A22;
   --Background: #f5f5f5;
   --Background-alternativo: #808080;
   --Destaque:gray;
