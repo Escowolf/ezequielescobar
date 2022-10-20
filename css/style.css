@@ -11,6 +11,11 @@
   --Destaque:gray;
 }
 
+hr{
+  border:3px solid var(--Texto);
+  z-index:3;
+}
+
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 3%;
@@ -138,6 +143,10 @@ button {
   height: 100%;
   padding-bottom: 1vh;
   border: solid 3px var(--Texto);
+  background-color: var(--Texto);
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom:10px;
 }
 
 .projectsPro-item_info {
@@ -145,12 +154,12 @@ button {
   height:auto;
   background-color: var(--Texto);
   color: var(--Background);
-  padding-bottom: 5vh;
 }
 
 .projectsPro-item-imagem {
   height: 30%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .projectsPro img {
@@ -187,7 +196,7 @@ button {
 
 /*flex END*/
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
   .header {
     min-height: 50px;
