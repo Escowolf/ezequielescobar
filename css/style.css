@@ -1,50 +1,299 @@
+#profile-ico {
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  right: 150px;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+body {
+  height: 100vh;
+  weight: 100vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  min-width:240px;
+}
+
 .dark-mode {
-  background-color: #1A1A1A;
+  background-color: var(--Destaque);
   --Texto: #e3622f;
 }
 
 :root {
   color: var(--Texto);
-  --Texto: #B04A22;
+  --Texto: #b04a22;
   --Background: #f5f5f5;
   --Background-alternativo: #808080;
-  --Destaque:gray;
+  --Destaque: #1a1a1a;
+}
+   
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Destaque);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  max-width: 100vw;
 }
 
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-item > a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--Texto);
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav-item > a:hover {
+  border-style: none;
+  color: var(--Background);
+  padding: 5px;
+}
+
+#main{
+  font-size:1.4em;
+}
+
+#backToTop {
+  position: fixed;
+  border-radius: 100px;
+  border:none;
+  padding: 20px;
+  bottom: 5vw;
+  right: 5vw;
+  color: var(--Background);
+  background-color: var(--Texto);
+}
+
+#main{
+  padding: 5% 10% 5% 10%;
+}
+
+.content-section {
+  background-color: black;
+  padding: 5% 10% 5% 10%;
+  font-size: 1.02em;
+}
+
+.presentation-section {
+  background-color: none;
+  padding: 5% 10% 5% 10%;
+  font-size: 0.9em;
+}
+
+.title {
+  text-align:center;
+  font-weight:bolder;
+  capitalize:full-size-kana;
+}
+
+.projects{
+  padding: 80px 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+
+.projects-item{
+  background-color:var(--Destaque);
+  border-radius:30px;  
+  width: 250px;
+  flex-grow: 1;
+  text-align:center;
+  padding: 1px 5px 10px 5px;
+  overflow: hidden;
+}
+
+.projects-imagem > img{
+  padding-top: 5px;
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+}
+
+div > .description{
+  justify-content: center;
+  align-items: center;
+  margin:3px;
+}
+
+div > .projects-item > a {
+  text-decoration:none;
+  background-color:black;
+  color: white;
+  padding:1px 10px;
+  border-radius:20%;
+}
+
+footer {
+  background-color: rgba(55, 55, 55, 0.5);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+footer > p {
+  font-weight:bold;
+  padding:10px;
+  font-size:0.9em;
+}
+
+@media (max-width: 610px) {
+  #profile-ico {
+    height: 75px;
+    border-radius: 50%;
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: absolute;
+    right: 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+
+  .navbar-nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .nav-icon {
+    background: none;
+    border:none;
+    color: var(--Texto);
+    display: inline;
+    position: baseline;
+  }
+
+  .navbar-nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .projects{
+    flex:none;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  .content-section {
+    background-color: var(--Destaque);
+    padding: 5% 10% 5% 10%;
+    font-size: 0.9em;
+  }
+
+  .presentation-section {
+    background-color: none;
+    padding: 5% 10% 5% 10%;
+    font-size: 0.9em;
+  }
+}
+/*
+.header { grid-area: header; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: red!important;
+  padding: 10px;
+}
+
+
 hr{
-  border:3px solid var(--Texto);
+  border:2px solid var(--Texto);
   z-index:3;
 }
 
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 3%;
+
+
+.content{
+  margin-left:10vw;
+  margin-right:10vw;
+  margin-top:5vw;
 }
 
 .title {
   font-size: 5rem;
-  margin: 0px;
+  margin: 0;
+  padding:0;
 }
 
 section {
   min-width: 200px;
   min-height: 200px;
-  height: 70vh;
 }
 
 .header {
-  min-height: 5vh;
+  height: 3vh;
+  padding:3vw;
   display: static;
   text-align: end;
-  border-bottom: 1px solid var(--Background-alternativo);
-  width: 90vw;
+  border-bottom: 3px solid var(--Background-alternativo);
+  width: 100%;
   align-items: baseline;
-}
-#nav-bar{
-  max-width: 1600px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
 }
 
 .nav-link {
@@ -98,15 +347,19 @@ button {
 #introduction {
   font-size: 3rem;
   margin-bottom: 50px;
-  margin-top: 200px;
-}
+  margin-top: 10%;
+} 
 
 #profile-ico {
+  position:absolute;
+  left:70%;
+  z-index:1;
+  margin: auto;
   border-radius: 50%;
-  padding-top:10vh;
-  padding-bottom:10vh;
-  height: 50vh;
-  align-self: center;
+    padding:0;
+    height: 50vh;
+  position:relative;
+  align-self: center; 
 }
 
 .title {
@@ -131,7 +384,7 @@ button {
   height: 100%;
   display:flex;
 }
-/*FLEX CONTAINER*/
+
 .projectsPro {
   display: flex;
   justify-content: center;
@@ -194,10 +447,44 @@ button {
   padding: 4vw;
 }
 
-/*flex END*/
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
+.header {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
+.header #nav-bar {
+  display: none;
+}
+
+.header a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.header a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
   .header {
     min-height: 50px;
     min-width: 350px;
@@ -224,13 +511,6 @@ button {
 
   #introduction {
     font-size: 2rem;
-  }
-
-  #profile-ico {
-    border-radius: 50%;
-    padding:0;
-    height: 50vh;
-    margin: auto;
   }
 
   .main-section {
@@ -272,135 +552,4 @@ button {
     display: block;
     margin-bottom: 20px;
   }
-}
-
-.heartbeat {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-9-7 8:32:12
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation heartbeat
- * ----------------------------------------
- */
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
-
-.text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-9-6 15:58:53
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation text-focus-in
- * ----------------------------------------
- */
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
+} */
