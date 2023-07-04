@@ -73,6 +73,10 @@ body {
   font-size: 1.2rem;
 }
 
+.nav-logo{
+  width: 50%;
+}
+
 .nav-icon {
   display: none;
 }
