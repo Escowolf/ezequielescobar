@@ -23,16 +23,18 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   min-width:240px;
+  color:var(--Texto);
 }
 
 .dark-mode {
   background-color: var(--Destaque);
+  --Textlinks:#f5f5f5;
   --Texto: #e3622f;
 }
 
 :root {
-  color: var(--Texto);
   --Texto: #b04a22;
+  --Textlinks:#f5f5f5;
   --Background: #f5f5f5;
   --Background-alternativo: #808080;
   --Destaque: #1a1a1a;
@@ -44,7 +46,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--Destaque);
-  color: #fff;
+  color: var(--Textlinks);
   padding: 0.5rem 1rem;
   max-width: 100vw;
 }
@@ -59,7 +61,7 @@ body {
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: var(--Textlinks);
   padding: 0% 5%;
   text-decoration: none;
 }
@@ -69,7 +71,7 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--Textlinks);
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -86,7 +88,7 @@ body {
 .nav-item > a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: var(--Texto);
+  color: var(--Textlinks);
   margin: 5px;
   padding: 5px;
 }
@@ -147,9 +149,10 @@ body {
   background-color:var(--Destaque);
   border-radius:30px;  
   width: 250px;
+  min-width: 250px;
   flex-grow: 1;
   text-align:center;
-  padding: 1px 5px 10px 5px;
+  padding: 0px 10px;
   overflow: hidden;
 }
 
@@ -208,29 +211,31 @@ footer > p {
     display: none;
   }
 
-  .navbar-nav a {
-    color: white;
-    padding: 14px 16px;
+  .navbar-nav > a,button {
+    width:auto;
+    margin:3% auto;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1em;
     display: block;
+    position: relative;
   }
 
   .nav-icon {
     background: none;
+    display: block;
+    position: baseline;
     border:none;
     color: var(--Texto);
-    display: inline;
-    position: baseline;
   }
 
-  .navbar-nav a:hover {
+  .navbar-nav > a:hover {
     background-color: #ddd;
     color: black;
   }
   
   .projects{
     flex:none;
+    padding:0;
   }
 
   .active {
