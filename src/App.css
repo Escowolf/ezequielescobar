@@ -54,6 +54,12 @@ hr {
   object-fit: cover;
 }
 
+#logo:hover {
+  float: left;
+  height: 4.8vh;
+  object-fit: cover;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -61,6 +67,14 @@ hr {
 }
 
 .nav-link {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--second-color);
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav-link:hover {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--first-color);
@@ -92,6 +106,26 @@ section {
   font-size: clamp(2rem, 9.5vw, 9.5rem);
   animation: textFocusIn 1s ease-in-out;
   text-align: center;
+}
+
+.default-section{
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.two-column-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin: 5vw 10vw;
+}
+
+.left-column {
+  background-color: var(--background-dark); 
+}
+
+.right-column {
+  background-color: var(--background-light); 
 }
 
 /* Footer */
