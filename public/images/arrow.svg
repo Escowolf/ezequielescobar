@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="arrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.92159584"
+     inkscape:cx="100.36938"
+     inkscape:cy="-14.648504"
+     inkscape:window-width="1846"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="300 : 150 : 1"
+       inkscape:persp3d-origin="150 : 100 : 1"
+       id="perspective1176" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect2301"
+       style="fill:#e3622f;stroke-width:16.2724;fill-opacity:1"
+       d="m 263.42801,120.38798 -104.65956,104.6626 c -6.28974,6.28974 -16.41872,6.28974 -22.70846,0 L 31.400441,120.39104 l -7.836813,7.83681 c -6.289733,6.28973 -6.289733,16.41567 0,22.70541 L 136.05999,263.42963 c 6.28974,6.28972 16.41872,6.28972 22.70846,0 L 271.26482,150.93326 c 6.28974,-6.28974 6.28974,-16.41874 0,-22.70846 z" />
+    <path
+       id="rect2301-2"
+       style="fill:#e3622f;stroke-width:16.2724;fill-opacity:1"
+       d="m 31.793806,43.629922 -7.836811,7.83681 c -6.289735,6.289738 -6.289735,16.415673 0,22.705411 L 136.45335,186.66851 c 6.28974,6.28973 16.41568,6.28973 22.70542,0 L 271.65513,74.172143 c 6.28974,-6.289738 6.28974,-16.415673 0,-22.705411 l -7.83681,-7.83681 -104.65955,104.659558 c -6.28974,6.28973 -16.41568,6.28973 -22.70542,0 z" />
+  </g>
+</svg>
