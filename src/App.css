@@ -4,6 +4,7 @@
   /** variables */
   --first-color: #5CE1E6;
   --second-color: #93B0B1;
+  --third-color:#5C6666;
   --background-light: #f5f5f5;
   --background-dark: #233233;
 
@@ -45,6 +46,12 @@ body {
 
 hr {
   border: 1px dashed var(--second-color);
+}
+
+.highlight {
+  background: var(--first-color);
+  border-radius: 10px;
+  color: black;
 }
 
 /* Navbar */
