@@ -1,7 +1,7 @@
 /* Root Variables */
 :root {
   
-  /** variables */
+  /** variables dark-mode */
   --first-color: #5CE1E6;
   --second-color: #93B0B1;
   --third-color:#5C6666;
@@ -35,6 +35,11 @@
 }
 
 .light-mode {
+  /** variables light-mode */
+  --first-color: #93B0B1;
+  --second-color: #5CE1E6;
+  --third-color:#5C6666;
+
   background-color: var(--background-light);
   color: var(--second-color)
 }
@@ -125,14 +130,6 @@ section {
   justify-content: space-between;
   align-items: flex-start; 
   margin: 5vw 10vw;
-}
-
-.left-column {
-  background-color: var(--background-dark); 
-}
-
-.right-column {
-  background-color: var(--background-light); 
 }
 
 /* Footer */

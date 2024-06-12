@@ -1,0 +1,36 @@
+.right-column {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    border-radius: 30px;
+}
+
+.perfil {
+    min-height: 20rem;
+    max-height: 50rem;
+    margin-left: 50px;
+    z-index: 1; 
+    position: relative;
+}
+
+.losango1, .losango2 {
+    background-color: var(--first-color);
+    width: 25rem;
+    height: 70px;
+    transform: rotate(-30deg);
+    position: absolute; 
+}
+
+.losango1 {
+    z-index: 2; 
+    bottom: 10px; 
+    right: 20px; 
+}
+
+.losango2 {
+    z-index: 0; 
+    top: 20px; 
+    left: 20px; 
+}
