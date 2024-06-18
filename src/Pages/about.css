@@ -3,16 +3,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--second-color);
-    border-radius: 30px;
+    max-width: 50%;
+    border: 1px solid black;
+    min-height: fit-content;
+}
+
+.left-column{
+    max-width: 50%;
 }
 
 .perfil {
-    min-height: 20rem;
-    max-height: 50rem;
-    margin-left: 50px;
-    z-index: 1; 
-    position: relative;
+    max-height: 40rem;
+    margin-left: 3vw;
+    z-index: -1; 
+    position: fixed;
+    right: 10px;
+}
+
+.background_perfil{
+    background-color: var(--second-color);
+    border-radius: 30px;
+    max-width: 50vw;
 }
 
 .losango1, .losango2 {
@@ -20,7 +31,6 @@
     width: 25rem;
     height: 70px;
     transform: rotate(-30deg);
-    position: absolute; 
 }
 
 .losango1 {
@@ -33,4 +43,23 @@
     z-index: 0; 
     top: 20px; 
     left: 20px; 
+}
+
+@media (max-width: 720px) {
+    .perfil {
+        max-height: 10px;
+        margin-left: 50px;
+        z-index: 0; 
+        position: relative;
+        border: 1px solid yellow;
+    }
+
+    .right-column {
+        background-color: none;
+        max-height: 0px;
+    }
+
+    .left-column {
+        min-width: 80%
+    }
 }

@@ -30,6 +30,7 @@
   }
   
   p {
+    font-size:1.2rem;
     margin-bottom: 0.5em; 
   }
 }
@@ -127,6 +128,7 @@ section {
 
 .two-column-section {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start; 
   margin: 5vw 10vw;
